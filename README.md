@@ -1,6 +1,6 @@
 <div align="center">
 
-# https://Editor-io.ml
+# https://editor-io.ml
 
 </div>
 
