@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: 'npx'
+  - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: 'weekly'
