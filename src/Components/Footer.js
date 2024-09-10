@@ -9,8 +9,7 @@ function Footer() {
   return (
     <div>
       <Container fluid className="footer">
-        Copywrite © {year} | Made with <i className="far fa-heart"></i>{" "}
-        Saikat
+        Copywrite © {year} | Developed by Saikat
       </Container>
     </div>
   );
