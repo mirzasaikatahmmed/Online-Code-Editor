@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div>
       <Container fluid className="footer">
-        Copywrite © {year} | Developed by Saikat
+        Copywrite © {year} | Developed by <a href="https://saikat.com.bd" target="_blank" rel="noreferrer">Saikat</a>
       </Container>
     </div>
   );

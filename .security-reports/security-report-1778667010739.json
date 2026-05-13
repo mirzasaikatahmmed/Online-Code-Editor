@@ -1,0 +1,582 @@
+{
+  "timestamp": "2026-05-13T10:10:10.737Z",
+  "passed": true,
+  "secrets": [],
+  "vulnerabilities": {
+    "total": 26,
+    "critical": 0,
+    "high": 14,
+    "moderate": 3,
+    "low": 9,
+    "info": 0,
+    "packages": [
+      {
+        "name": "@jest/core",
+        "severity": "low",
+        "via": [
+          "jest-config",
+          "jest-runner"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "@svgr/plugin-svgo",
+        "severity": "high",
+        "via": [
+          "svgo"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "@svgr/webpack",
+        "severity": "high",
+        "via": [
+          "@svgr/plugin-svgo"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "@tootallnate/once",
+        "severity": "low",
+        "via": [
+          "@tootallnate/once vulnerable to Incorrect Control Flow Scoping"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "bfj",
+        "severity": "high",
+        "via": [
+          "jsonpath"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "css-minimizer-webpack-plugin",
+        "severity": "high",
+        "via": [
+          "serialize-javascript"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "css-select",
+        "severity": "high",
+        "via": [
+          "nth-check"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "http-proxy-agent",
+        "severity": "low",
+        "via": [
+          "@tootallnate/once"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "jest",
+        "severity": "low",
+        "via": [
+          "@jest/core",
+          "jest-cli"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "jest-cli",
+        "severity": "low",
+        "via": [
+          "@jest/core",
+          "jest-config"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "jest-config",
+        "severity": "low",
+        "via": [
+          "jest-environment-jsdom",
+          "jest-runner"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "jest-environment-jsdom",
+        "severity": "low",
+        "via": [
+          "jsdom"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "jest-runner",
+        "severity": "low",
+        "via": [
+          "jest-environment-jsdom"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "jsdom",
+        "severity": "low",
+        "via": [
+          "http-proxy-agent"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "jsonpath",
+        "severity": "high",
+        "via": [
+          "underscore"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "nth-check",
+        "severity": "high",
+        "via": [
+          "Inefficient Regular Expression Complexity in nth-check"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "postcss",
+        "severity": "moderate",
+        "via": [
+          "PostCSS line return parsing error",
+          "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "react-scripts",
+        "severity": "high",
+        "via": [
+          "@svgr/webpack",
+          "css-minimizer-webpack-plugin",
+          "jest",
+          "resolve-url-loader",
+          "webpack-dev-server",
+          "workbox-webpack-plugin"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "resolve-url-loader",
+        "severity": "moderate",
+        "via": [
+          "postcss"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "rollup-plugin-terser",
+        "severity": "high",
+        "via": [
+          "serialize-javascript"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "serialize-javascript",
+        "severity": "high",
+        "via": [
+          "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+          "Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "svgo",
+        "severity": "high",
+        "via": [
+          "css-select"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "underscore",
+        "severity": "high",
+        "via": [
+          "Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "webpack-dev-server",
+        "severity": "moderate",
+        "via": [
+          "webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+          "webpack-dev-server users' source code may be stolen when they access a malicious web site"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "workbox-build",
+        "severity": "high",
+        "via": [
+          "rollup-plugin-terser"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "workbox-webpack-plugin",
+        "severity": "high",
+        "via": [
+          "workbox-build"
+        ],
+        "fixAvailable": {
+          "name": "react-scripts",
+          "version": "0.0.0",
+          "isSemVerMajor": true
+        }
+      }
+    ],
+    "languages": [
+      {
+        "language": "Node.js",
+        "icon": "🟢",
+        "detected": true,
+        "toolAvailable": true,
+        "total": 26,
+        "critical": 0,
+        "high": 14,
+        "moderate": 3,
+        "low": 9,
+        "packages": [
+          {
+            "name": "@jest/core",
+            "severity": "low",
+            "via": [
+              "jest-config",
+              "jest-runner"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "@svgr/plugin-svgo",
+            "severity": "high",
+            "via": [
+              "svgo"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "@svgr/webpack",
+            "severity": "high",
+            "via": [
+              "@svgr/plugin-svgo"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "@tootallnate/once",
+            "severity": "low",
+            "via": [
+              "@tootallnate/once vulnerable to Incorrect Control Flow Scoping"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "bfj",
+            "severity": "high",
+            "via": [
+              "jsonpath"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "css-minimizer-webpack-plugin",
+            "severity": "high",
+            "via": [
+              "serialize-javascript"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "css-select",
+            "severity": "high",
+            "via": [
+              "nth-check"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "http-proxy-agent",
+            "severity": "low",
+            "via": [
+              "@tootallnate/once"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "jest",
+            "severity": "low",
+            "via": [
+              "@jest/core",
+              "jest-cli"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "jest-cli",
+            "severity": "low",
+            "via": [
+              "@jest/core",
+              "jest-config"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "jest-config",
+            "severity": "low",
+            "via": [
+              "jest-environment-jsdom",
+              "jest-runner"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "jest-environment-jsdom",
+            "severity": "low",
+            "via": [
+              "jsdom"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "jest-runner",
+            "severity": "low",
+            "via": [
+              "jest-environment-jsdom"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "jsdom",
+            "severity": "low",
+            "via": [
+              "http-proxy-agent"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "jsonpath",
+            "severity": "high",
+            "via": [
+              "underscore"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "nth-check",
+            "severity": "high",
+            "via": [
+              "Inefficient Regular Expression Complexity in nth-check"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "postcss",
+            "severity": "moderate",
+            "via": [
+              "PostCSS line return parsing error",
+              "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "react-scripts",
+            "severity": "high",
+            "via": [
+              "@svgr/webpack",
+              "css-minimizer-webpack-plugin",
+              "jest",
+              "resolve-url-loader",
+              "webpack-dev-server",
+              "workbox-webpack-plugin"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "resolve-url-loader",
+            "severity": "moderate",
+            "via": [
+              "postcss"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "rollup-plugin-terser",
+            "severity": "high",
+            "via": [
+              "serialize-javascript"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "serialize-javascript",
+            "severity": "high",
+            "via": [
+              "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+              "Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "svgo",
+            "severity": "high",
+            "via": [
+              "css-select"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "underscore",
+            "severity": "high",
+            "via": [
+              "Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "webpack-dev-server",
+            "severity": "moderate",
+            "via": [
+              "webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+              "webpack-dev-server users' source code may be stolen when they access a malicious web site"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "workbox-build",
+            "severity": "high",
+            "via": [
+              "rollup-plugin-terser"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "workbox-webpack-plugin",
+            "severity": "high",
+            "via": [
+              "workbox-build"
+            ],
+            "fixAvailable": {
+              "name": "react-scripts",
+              "version": "0.0.0",
+              "isSemVerMajor": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
