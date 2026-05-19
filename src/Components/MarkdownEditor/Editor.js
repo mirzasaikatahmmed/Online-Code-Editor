@@ -9,6 +9,15 @@ import Footer from "../Footer";
 import fileDownload from "js-file-download";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const md = new Remarkable({
+  html: true,
+  xhtmlOut: true,
+  langPrefix: "language-",
+  quotes: "“”‘’",
+  typographer: true,
+});
+md.use(linkify);
+
 function Editor() {
   const InitialVal = `## Welcome to Editor
 
@@ -48,15 +57,6 @@ function Editor() {
     backgroundColor: "#f3f3f3",
     color: "black",
   };
-
-  var md = new Remarkable({
-    html: true,
-    xhtmlOut: true,
-    langPrefix: "language-",
-    quotes: "“”‘’",
-    typographer: true,
-  });
-  md.use(linkify);
 
   const [userInput, updateStorageInput] = useLocalStorage(
     "mdEditor",

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 export const useLocalStorage = (key, initialValue) => {
   const [storedValue, setStoredValue] = useState(() => {
@@ -10,14 +10,14 @@ export const useLocalStorage = (key, initialValue) => {
     }
   });
 
-  const setValue = (value) => {
+  const setValue = useCallback((value) => {
     try {
       setStoredValue(value);
       localStorage.setItem(key, JSON.stringify(value));
     } catch (err) {
       console.log(err);
     }
-  };
+  }, [key]);
 
   return [storedValue, setValue];
 };

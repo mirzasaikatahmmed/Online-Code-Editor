@@ -47,12 +47,12 @@ function LaunguageManager() {
     updateHtmlStrorage(html);
     updateCssStrorage(css);
     updateJsStrorage(js);
-  }, [html, css, js]);
+  }, [html, css, js, updateHtmlStrorage, updateCssStrorage, updateJsStrorage]);
 
   return (
     <div>
       <Container fluid={true} className="pane pane-top">
-        <Row noGutters={true}>
+        <Row className="g-0">
           <Col md={4} className="editor-lang">
             <div className="editor-text">
               <i className="fab fa-html5"> </i> Html
@@ -95,10 +95,11 @@ function LaunguageManager() {
       </Container>
 
       <Container fluid={true} className="pane pane-bottom">
-        <Row noGutters={true}>
+        <Row className="g-0">
           <iframe
             srcDoc={srcDoc}
             className="output-pane"
+            title="Output Preview"
             allowFullScreen
           ></iframe>
         </Row>
